@@ -18,7 +18,7 @@ const ProductsCard = ({ product }) => {
         alt={product.title}
         style={{
           width: "100%",       
-          height: "auto",      
+          height: "40vh",      
           borderRadius: "10px", 
           objectFit: "cover",  
         }}
