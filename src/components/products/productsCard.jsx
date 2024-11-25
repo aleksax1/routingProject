@@ -1,7 +1,9 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const ProductsCard = ({ product }) => {
-  const imageUrl = product.images && product.images.length > 0 ? product.images[0] :'fallback_image_url.png';
+  
+  const imageUrl = product.images && product.images.length > 0 ? product.images[0] : 'fallback_image_url.png';
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -26,6 +28,24 @@ const ProductsCard = ({ product }) => {
       <h2>{product.title}</h2>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
+      <div>
+        <div style={{
+          display: "flex",
+          justifyItems: "center",
+          alignItems:"center"
+        }}>  
+      <button onClick={() => navigate(`/oneproduct/${product.id}`)} style={{
+          height: "5vh",
+          border: "none",
+          backgroundColor: "rgba(122, 43, 72, 0.753)",
+          color: 'aliceblue',
+          textDecoration: "none",
+          width:"7vw",
+          marginTop:'10px',
+          borderRadius:'10px'
+          }}>PORUCI</button>
+          </div>
+      </div>
     </div>
   );
 };
