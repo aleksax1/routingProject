@@ -22,7 +22,16 @@ function HomePage() {
   return (
     <>
       <Nav />
-
+      <h1>COSMETICS PRODUCTS</h1>
+        <img
+            style={{
+            width: '100%',
+            height:"40vh",
+            objectFit:"cover",
+            }}
+            src="https://www.shutterstock.com/image-photo/makeup-professional-cosmetics-on-pink-600nw-1398700589.jpg"
+            alt=""
+        />
       <div
         className="glavni"
         style={{

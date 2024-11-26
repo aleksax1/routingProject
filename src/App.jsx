@@ -14,16 +14,17 @@ axios.get('https://dummyjson.com/products')
     console.error('Error fetching data:', error);
   });
 function App() {
-  return (
-    <BrowserRouter>
+  return (<>
+  <Toaster/>
+  <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
         <Route path="/oneproduct/:id" element={<OneProduct />} />
-        
       </Routes>
     </BrowserRouter>
+  </>
   );
 }
 

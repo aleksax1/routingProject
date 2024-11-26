@@ -1,5 +1,7 @@
 import React from "react";
 import './footer.css';
+import { FaGithub } from "react-icons/fa";
+
 function Footer() {
     return (
       <>
@@ -19,10 +21,10 @@ function Footer() {
         }}>
           <div style={{
             display:"flex",
-            alignItems:"center",
+            alignItems: "center",
             paddingRight: 20,
           }}> 
-          <h4>created by: Aleksa Jankovic</h4> 
+                        <h4>created by: Aleksa Jankovic  <a href="https://github.com/aleksax1"><FaGithub style={{width:25,height:25}} /></a></h4> 
           </div>
           <div>
           </div>

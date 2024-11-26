@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Footer from "../../components/footer/footer";
 import Nav from "../../components/nav/nav";
 import "./oneproduct.css";
+import { toast } from "react-hot-toast";
 
 function OneProduct() {
   const { id } = useParams();
@@ -72,6 +73,7 @@ const fetchproduct = async () => {
             </select>
           </form>
           <button
+            onClick={() => toast.success("Successfully purchased!")}
             style={{
               height: "5vh",
               border: "none",
@@ -84,7 +86,7 @@ const fetchproduct = async () => {
             
             }}
           >
-            PORUCI
+            PURCHOSE
           </button>
         </div>
       </div>

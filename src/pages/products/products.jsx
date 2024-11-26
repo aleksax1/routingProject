@@ -37,6 +37,7 @@
             display: "flex",
             justifyContent: "center",
             paddingTop: "50px",
+            paddingBottom: "50px",
             flexWrap: "wrap",
             gap: "20px",
             }}
