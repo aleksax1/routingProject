@@ -19,16 +19,20 @@ const ProductsCard = ({ product }) => {
 
       }}
     >
-      <img
-        src={imageUrl}
-        alt={product.title}
-        style={{
-          width: "100%",
-          height: "40vh",
-          borderRadius: "10px",
-          objectFit: "cover",
-        }}
-      />
+     <img
+  src={imageUrl}
+  alt={product.title}
+  style={{
+    width: "100%",
+    height: "40vh",
+    borderRadius: "10px",
+    objectFit: "cover",
+    transition: "transform 0.6s ease", 
+    cursor: "pointer",
+  }}
+  onMouseOver={(e) => (e.target.style.transform = "scale(1.2)")} 
+  onMouseOut={(e) => (e.target.style.transform = "scale(1)")} 
+/>
 
       <h2>{product.title}</h2>
       <p>{product.description}</p>

@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <Nav />
-      <h1>COSMETICS PRODUCTS</h1>
+      <h1>ABOUT US</h1>
         <img
             style={{
             width: '100%',
@@ -18,30 +18,33 @@ function About() {
         />
       <div
         style={{
+          color:"white",
           padding: "20px",
           textAlign: "center",
-          backgroundColor: "#f9f9f9",
           minHeight: "40vh",
-          padding: "15vh 20vh",
+          padding: "20vh 20vh",
+          margin: "15vh 20vh",
+          backgroundColor: "#e3c6c6e1",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent:"center"
           
         }}
       >
-        <h2 style={{
-          fontSize:"10vh"  
-        }}> About Us</h2>
+        
         <p  style={{
-          fontSize:"3vh"  
+          fontSize:"4vh"  
         }}>
           Welcome to our website! We are passionate about providing the best
           products and services to our customers. Our mission is to ensure
           quality and customer satisfaction in everything we do.
         </p>
         <p style={{
-          fontSize:"3vh"  
+          fontSize:"4vh"  
         }}>
           Learn more about our <Link to="/products" style={{
             textDecoration: "none",
-            color:"blue"
+            color:"#3f0267e1"
           }}>PRODUCTS</Link> or contact
           us for any inquiries.
         </p>
